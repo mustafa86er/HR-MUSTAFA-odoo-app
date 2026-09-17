@@ -2,8 +2,6 @@ plugins {
     id "com.android.application"
     id "kotlin-android"
     id "dev.flutter.flutter-gradle-plugin"
-    id "com.google.gms.google-services"
-    id "com.google.firebase.appdistribution"
 }
 
 def localProperties = new Properties()
@@ -36,7 +34,6 @@ android {
     }
 
     defaultConfig {
-        // عدّل هذا المعرّف ليطابق ما سجّلته في Firebase Console
         applicationId "com.alejtehad.hr_odoo_app"
         minSdk 21
         targetSdk 36
@@ -46,21 +43,11 @@ android {
 
     buildTypes {
         release {
-            // مؤقتًا نوقّع بمفتاح debug حتى تجهّز مفتاح توقيع خاص بك للنشر النهائي
             signingConfig signingConfigs.debug
-            firebaseAppDistribution {
-                // اسم مجموعة المختبرين التي تنشئها في Firebase Console
-                groups = "employees"
-                releaseNotes = "نسخة تجريبية من تطبيق HR"
-            }
         }
     }
 }
 
 flutter {
     source "../.."
-}
-
-dependencies {
-    implementation platform("com.google.firebase:firebase-bom:33.1.0")
 }
