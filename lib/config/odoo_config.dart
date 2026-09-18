@@ -2,19 +2,18 @@
 /// عدّل القيم هنا حسب بيئة العميل (Odoo.sh / on-premise).
 class OdooConfig {
   /// رابط قاعدة Odoo (بدون شرطة مائلة في النهاية)
-  /// مثال: https://asasaletehad2026.odoo.com
-  static const String baseUrl = 'https://asasaletehad2026.odoo.com';
+  static const String baseUrl = 'https://mustafa86er-hr-alijtehad-app-main-38291258.dev.odoo.com';
 
-  /// اسم قاعدة البيانات في Odoo.sh
-  static const String database = 'asasaletehad2026';
+  /// اسم قاعدة البيانات
+  static const String database = 'mustafa86er-hr-alijtehad-app-main-38291258';
 
   /// مهلة الاتصال بالثواني
   static const int timeoutSeconds = 30;
 
-  /// تفعيل استخدام الموقع الجغرافي عند تسجيل الحضور
-
   /// اسم فئة "تصحيح حضور" في تطبيق الموافقات (Approvals) على Odoo
   static const String attendanceCorrectionCategoryName = 'تصحيح حضور';
+
+  /// تفعيل استخدام الموقع الجغرافي عند تسجيل الحضور
   static const bool requireGeoLocation = true;
 
   /// نصف قطر الموقع المسموح به بالأمتار (اختياري - جيوفنس)
