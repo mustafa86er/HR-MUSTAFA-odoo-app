@@ -12,6 +12,9 @@ class OdooConfig {
   static const int timeoutSeconds = 30;
 
   /// تفعيل استخدام الموقع الجغرافي عند تسجيل الحضور
+
+  /// اسم فئة "تصحيح حضور" في تطبيق الموافقات (Approvals) على Odoo
+  static const String attendanceCorrectionCategoryName = 'تصحيح حضور';
   static const bool requireGeoLocation = true;
 
   /// نصف قطر الموقع المسموح به بالأمتار (اختياري - جيوفنس)
