@@ -1,5 +1,5 @@
 name: hr_odoo_app
-description: تطبيق HR متكامل (حضور، إجازات، رواتب، موافقات) مرتبط مباشرة بـ Odoo Enterprise عبر JSON-RPC.
+description: تطبيق HR الاجتهاد - حضور، إجازات، رواتب وموافقات، مرتبط مباشرة بـ Odoo. تطوير المهندس مصطفى ارخيص.
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -26,6 +26,17 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.1
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/icon/icon.png
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon.png"
+  min_sdk_android: 21
+  remove_alpha_ios: true
+  background_color_ios: "#009688"
